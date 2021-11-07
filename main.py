@@ -1,6 +1,8 @@
 from array import array
 
+from listas import lista_ligada
 from vetores import vetor
+from listas import lista_ligada
 
 print(30 * '-', 'MENU', 30 * '-')
 print("1. Vetores")
@@ -24,3 +26,12 @@ if menu == 1:
     print(vetor_teste)
     vetor_teste.remover_elemento(5)
     print(vetor_teste)
+
+elif menu == 2:
+    lista_teste = lista_ligada.ListaLigada()
+    lista_teste.inserir(1)
+    lista_teste.inserir(4)
+    lista_teste.inserir(5)
+    lista_teste.inserir_posicao(1, 10)
+    print(lista_teste)
+    #print(lista_teste.recuperar_no(3))
